@@ -28,7 +28,14 @@ author:
 
 paginate:         5
 
+instagram:
+  url:            https://www.instagram.com/ayydavay/
+  
+linkedin:
+  url:            https://linkedin.com/in/ayydavay
+
 github:
-  repo:           https://github.com/poole/hyde
+  url:            https://github.com/davay
+  repo:           https://github.com/davay/davay.github.io
 
 plugins: [jekyll-paginate, jekyll-gist, jekyll-seo-tag]

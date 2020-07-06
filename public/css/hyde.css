@@ -75,14 +75,6 @@ html {
   color: #fff;
 }
 
-/* About section */
-.sidebar-about h1 {
-  color: #fff;
-  margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
-}
-
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
@@ -150,6 +142,7 @@ iframe {
 .flag {
   width: 32px;
   height: 32px;
+  text-align: center;
   margin: -0.5rem 1rem 0.2rem 0;
   display: inline-block;
 }
@@ -177,8 +170,6 @@ iframe {
     margin-right: 22rem;
   }
 }
-
-
 
 /*
  * Themes
