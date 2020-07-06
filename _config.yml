@@ -1,6 +1,25 @@
-theme: jekyll-theme-hacker
-title: Devin Lim
-description: A personal website
-email: devin@devinl.im
-url: "https://devinl.im"
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
 
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            devinl.im
+tagline:          Devin Lim
+description:      'Linux enthusiast<br>🇮🇩➡️🇲🇾➡️🇦🇺➡️🇺🇸<br>Previously<br><a href="https://amazon.care">@Amazon</a> & <a href="https://polyverse.com/">@Polyverse</a>'
+url:              https://devinl.im
+baseurl:          /
+
+author:
+  name:           'Devin Lim'
+  url:            https://www.linkedin.com/in/ayydavay/
+  email:          devin@devinl.im
+
+paginate:         5
+
+github:
+  repo:           https://github.com/poole/hyde
+
+plugins: [jekyll-paginate, jekyll-gist, jekyll-seo-tag]
