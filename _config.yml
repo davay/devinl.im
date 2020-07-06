@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         kramdown
-highlighter:      pygments
+highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
@@ -8,7 +8,16 @@ permalink:        pretty
 # Setup
 title:            devinl.im
 tagline:          Devin Lim
-description:      'Linux enthusiast<br>🇮🇩~🇲🇾~🇦🇺~🇺🇸<br>Previously<br><a href="https://amazon.care">@Amazon</a> & <a href="https://polyverse.com/">@Polyverse</a>'
+description:      'Linux enthusiast
+                  <br>
+                  <div class="flag"><img src="public/icons/id.ico"></div>    
+                  <div class="flag"><img src="public/icons/my.ico"></div>    
+                  <div class="flag"><img src="public/icons/au.ico"></div>    
+                  <div class="flag"><img src="public/icons/us.ico"></div>
+                  <br>
+                  Previously
+                  <br>
+                  <a href="https://amazon.care">@Amazon</a> & <a href="https://polyverse.com/">@Polyverse</a>'
 url:              https://devinl.im
 baseurl:          /
 
