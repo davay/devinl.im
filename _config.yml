@@ -38,4 +38,6 @@ github:
   url:            https://github.com/davay
   repo:           https://github.com/davay/davay.github.io
 
+version:          1.2
+
 plugins: [jekyll-paginate, jekyll-gist, jekyll-seo-tag]
