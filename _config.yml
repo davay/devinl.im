@@ -14,16 +14,13 @@ description:      'Linux enthusiast
                   <div class="flag"><img src="/public/icons/my.ico"></div>    
                   <div class="flag"><img src="/public/icons/au.ico"></div>    
                   <div class="flag"><img src="/public/icons/us.ico"></div>
-                  <br>
-                  Previously
-                  <br>
-                  <a href="https://amazon.care">@Amazon</a> & <a href="https://polyverse.com/">@Polyverse</a>'
+                  <br>'
 url:              https://devinl.im
 baseurl:          /
 
 author:
   name:           'Devin Lim'
-  url:            https://www.linkedin.com/in/ayydavay/
+  url:            https://www.linkedin.com/in/devinlim/
   email:          devin@devinl.im
 
 paginate:         5
@@ -32,7 +29,7 @@ instagram:
   url:            https://www.instagram.com/ayydavay/
   
 linkedin:
-  url:            https://linkedin.com/in/ayydavay
+  url:            https://linkedin.com/in/devinlim
 
 github:
   url:            https://github.com/davay
