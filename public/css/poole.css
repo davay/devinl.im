@@ -264,6 +264,42 @@ tbody tr:nth-child(odd) th {
   font-weight: 300;
 }
 
+.pdf-container {
+  width: 100%;
+  height: 1000px; /* Adjust this value to match your PDF's height */
+  overflow: hidden;
+  position: relative;
+}
+
+.pdf-container {
+  width: 100%;
+  height: 0;
+  border: none;
+  padding-bottom: 129%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.pdf-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.about{
+  font-size: 0.85rem;
+  color: rgba(255,255,255,1);
+  display: block;
+  line-height: 1.75;
+  border: 2px solid #ffffff;
+  padding: 10px; 
+  border-radius: 5px;
+  text-align: left;
+}
 
 /*
  * Messages

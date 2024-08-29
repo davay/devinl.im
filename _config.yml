@@ -15,6 +15,14 @@ description:      'Trust in sudo-science
                   <div class="flag"><img src="/public/icons/au.ico"></div>    
                   <div class="flag"><img src="/public/icons/us.ico"></div>
                   <br>'
+summary:          "
+                  <b><u>Personal interests:</b></u><br>
+                  Product Design, MLOps/DevOps, Compilers, and Language Design
+                  <br><br>
+                  <b><u>Roles I'm currently looking for:</b></u><br> 
+                  Machine Learning Engineer, Compiler Engineer, Machine Learning Compiler Engineer, and (general) Software Engineer.
+                  "
+
 url:              https://devinl.im
 baseurl:          /
 
@@ -25,9 +33,6 @@ author:
 
 paginate:         5
 
-instagram:
-  url:            https://www.instagram.com/ayydavay/
-  
 linkedin:
   url:            https://linkedin.com/in/devinlim
 
