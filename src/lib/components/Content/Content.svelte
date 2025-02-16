@@ -21,7 +21,7 @@
           {/each}
         </div>
       </div>
-      <div class="font-mono text-[11px] leading-relaxed text-black whitespace-pre-wrap markdown-content font-light">
+      <div class="font-mono text-[11px] leading-relaxed text-black whitespace-pre-wrap font-light">
         {@html $currentContent.content}
       </div>
     </div>
