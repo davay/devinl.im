@@ -2,16 +2,16 @@
 layout: default
 title: Home
 ---
+
 <div class="posts">
-    {% for post in paginator.posts %}
-    <div class="post">
-      <h1 class="post-title">
-          {{ post.title }}
-      </h1>
-  
-      <span class="post-date"> Last edited {{ post.date | date_to_string }}</span>
-  
-      {{ post.content }}
-    </div>
-    {% endfor %}
+  {% assign home_posts = site.posts | where_exp: "post", "post.categories contains 'Home'" %}
+  {% for post in home_posts %}
+  <div class="post">
+    <h1 class="post-title">
+      {{ post.title }}
+    </h1>
+    <span class="post-date"> Last edited {{ post.date | date_to_string }}</span>
+    {{ post.content }}
   </div>
+  {% endfor %}
+</div>

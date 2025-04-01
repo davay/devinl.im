@@ -21,13 +21,21 @@
       {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item" href="{{site.linkedin.url}}">Projects</a>
+      <!-- Projects Section -->
+      <span class="sidebar-nav-header">Projects</span>
+      {% assign project_posts = site.posts | where: "categories", "project" %}
+      {% for project in project_posts %}
+      <a class="sidebar-nav-item project-item{% if page.url == project.url %} active{% endif %}"
+        href="{{ project.url }}">{{ project.title }}</a>
+      {% endfor %}
 
       <br>
+      <span class="sidebar-nav-header">Links</span>
       <a class="sidebar-nav-item" href="{{site.linkedin.url}}">LinkedIn</a>
       <a class="sidebar-nav-item" href="{{site.github.url}}">Github</a>
 
       <br>
+      <span class="sidebar-nav-header">This Website</span>
       <a class="sidebar-nav-item" href="resume.pdf">Resume</a>
       <a class="sidebar-nav-item" href="{{site.github.repo}}">Source Code</a>
 
