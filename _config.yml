@@ -25,7 +25,7 @@ summary:          "
                   "
 
 url:              https://devinl.im
-baseurl:          /
+baseurl:          ""
 
 author:
   name:           'Devin Lim'
