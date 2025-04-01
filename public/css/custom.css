@@ -3,3 +3,9 @@
   margin-top: -10px;
   display: block;
 }
+
+.post-img {
+  border: 2px solid black;
+  padding: 4px;
+  height: 600px;
+}
