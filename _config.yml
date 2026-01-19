@@ -1,46 +1,46 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown: kramdown
+highlighter: rouge
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 
 # Setup
-title:            devinl.im
-tagline:          Devin Lim
-description:      '
-                  aspiring sudo-scientist
-                  <br>
-                  <div class="flag"><img src="/public/icons/id.ico"></div>    
-                  <div class="flag"><img src="/public/icons/my.ico"></div>    
-                  <div class="flag"><img src="/public/icons/au.ico"></div>    
-                  <div class="flag"><img src="/public/icons/us.ico"></div>
-                  '
-summary:          "
-                  <b><u>Personal interests:</b></u><br>
-                  Product Design, MLOps/DevOps, Compilers, and Open Source Software
-                  <br><br>
-                  <b><u>Roles I'm currently looking for:</b></u><br> 
-                  Machine Learning Engineer, Machine Learning Compiler Engineer, and (general) Software Engineer
-                  "
+title: devinl.im
+tagline: Devin Lim
+description: '
+  aspiring sudo-scientist
+  <br>
+  <div class="flag"><img src="/public/icons/id.ico"></div>
+  <div class="flag"><img src="/public/icons/my.ico"></div>
+  <div class="flag"><img src="/public/icons/au.ico"></div>
+  <div class="flag"><img src="/public/icons/us.ico"></div>
+  '
+summary: "
+  <b><u>Personal interests:</b></u><br>
+  Product Design, Computational Neuroscience, MLOps/DevOps, Compilers, and Open Source Software
+  <br><br>
+  <b><u>Roles I'm currently looking for:</b></u><br>
+  Machine Learning Engineer, Machine Learning Compiler Engineer, and (general) Software Engineer
+  "
 
-url:              https://devinl.im
-baseurl:          ""
+url: https://devinl.im
+baseurl: ""
 
 author:
-  name:           'Devin Lim'
-  url:            https://www.linkedin.com/in/devinlim/
-  email:          devin@devinl.im
+  name: "Devin Lim"
+  url: https://www.linkedin.com/in/devinlim/
+  email: devin@devinl.im
 
-paginate:         5
+paginate: 5
 
 linkedin:
-  url:            https://linkedin.com/in/devinlim
+  url: https://linkedin.com/in/devinlim
 
 github:
-  url:            https://github.com/davay
-  repo:           https://github.com/davay/davay.github.io
+  url: https://github.com/davay
+  repo: https://github.com/davay/davay.github.io
 
-version:          1.2
+version: 1.2
 
 plugins: [jekyll-paginate, jekyll-gist, jekyll-seo-tag]
