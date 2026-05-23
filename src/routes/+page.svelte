@@ -1,7 +1,7 @@
 <svelte:head><title>devinl.im</title></svelte:head>
 
 <div>
-	<div class="mb-3 flex flex-wrap items-baseline gap-x-4">
+	<div class="mb-5 flex flex-wrap items-baseline gap-x-4">
 		<h1 class="font-mono text-lg text-black">Resume</h1>
 		<span class="font-mono text-xs text-gray-450">January 18, 2026</span>
 	</div>

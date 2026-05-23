@@ -5,19 +5,20 @@
 
 	let { children } = $props();
 	let open = $state(true);
-	// afterNavigate(() => {
-	// 	open = false;
-	// }); // close menu on navigation
+	afterNavigate((navigation) => {
+		window.scrollTo(0, 0);
+		if (navigation.from) open = false;
+	});
 </script>
 
 <svelte:head><link rel="icon" type="image/png" href="/favicon.png" /></svelte:head>
 
 <!-- Mobile top bar -->
 <div
-	class="sticky top-0 z-20 flex items-center justify-between border-b border-gray-200 p-4 md:hidden"
+	class="sticky top-0 flex items-center justify-between p-4 md:hidden {open ? '' : 'border-b border-gray-250'}"
 	style="background-color: var(--bg-sidebar)"
 >
-	<a href="/" class="font-mono text-sm text-gray-450 hover:text-black">devinl.im</a>
+	<a href="/" class="bg-gray-900 px-2 py-0.5 font-mono text-sm text-white">devinl.im</a>
 	<button
 		onclick={() => (open = !open)}
 		class="font-mono text-sm text-gray-450 hover:text-black"
@@ -27,9 +28,11 @@
 	</button>
 </div>
 
+<div class="halftone" style="transform: rotate(75deg);"></div>
+<div class="halftone" style="transform: rotate(45deg);"></div>
 <div class="flex min-h-screen flex-col bg-white md:flex-row">
 	<div
-		class="{open ? 'block' : 'hidden'} md:sticky md:top-0 md:h-screen md:self-start md:border-r md:border-gray-200"
+		class="{open ? 'block' : 'hidden'} border-b border-gray-250 md:block md:border-b-0 md:sticky md:top-0 md:h-screen md:self-start md:border-r"
 		style="background-color: var(--bg-sidebar)"
 	>
 		<Sidebar />

@@ -4,7 +4,7 @@
 </script>
 
 <div class="max-w-2xl font-mono text-xs">
-	<div class="mb-8 flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-gray-200 pb-4">
+	<div class="mb-5 flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-gray-250 pb-4">
 		<span class="text-gray-450">filter:</span>
 		<a href={basePath} class="hover:text-black {!activeTag ? 'text-black' : 'text-gray-450'}">{!activeTag ? '[all]' : 'all'}</a>
 		{#each tags as tag (tag)}

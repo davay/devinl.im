@@ -11,8 +11,8 @@
 <svelte:head><title>{meta.title} — devinl.im</title></svelte:head>
 
 <article class="max-w-2xl">
-	<a href={basePath} class="mb-6 block font-mono text-xs text-gray-450 hover:text-black">← {basePath}</a>
-	<div class="mb-2 flex items-baseline justify-between gap-8">
+	<a href={basePath} class="mb-5 mt-1 block font-mono text-xs text-gray-450 hover:text-black">← {basePath}</a>
+	<div class="mb-2 flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between md:gap-8">
 		<h1 class="font-mono text-lg text-black">{meta.title}</h1>
 		<span class="shrink-0 font-mono text-xs text-gray-450">{dateStr}</span>
 	</div>
