@@ -1,42 +1,38 @@
-# sv
-
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## Quickstart
 
 ```sh
-# create a new project
-npx sv create my-app
+pnpm dev
 ```
 
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-pnpm dlx sv@0.15.3 create --template minimal --no-types --add prettier tailwindcss="plugins:typography" --install pnpm devinl.im
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Dependencies
 
 ## Building
 
 To create a production version of your app:
 
 ```sh
-npm run build
+pnpm build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `pnpm preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Assets
+
+### Favicon
+
+To regenerate `static/favicon.png` from `static/me.jpg` (grayscale, circular, cropped to face + torso):
+
+```sh
+magick static/me.jpg \
+  -gravity North -crop 660x660+20+190 +repage \
+  -colorspace Gray \
+  -resize 64x64 \
+  \( +clone -alpha extract \
+  -fill black -colorize 100 \
+  -fill white -draw "circle 32,32 32,0" \
+  \) \
+  -compose CopyOpacity -composite \
+  static/favicon.png
+```
+
+Requires ImageMagick 7+ (`brew install imagemagick`). If you update `me.jpg`, the crop size (`660x660`, which controls zoom) and offsets (`+20+190`) may need adjustment depending on how the new photo is framed.

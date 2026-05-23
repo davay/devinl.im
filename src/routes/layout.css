@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/typography';
 
 :root {
 	--bg-sidebar: #f7f5f3;

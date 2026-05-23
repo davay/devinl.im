@@ -1,6 +1,5 @@
 <script>
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import Sidebar from '$lib/components/Sidebar.svelte';
 	import { afterNavigate } from '$app/navigation';
 
@@ -11,7 +10,7 @@
 	// }); // close menu on navigation
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head><link rel="icon" type="image/png" href="/favicon.png" /></svelte:head>
 
 <!-- Mobile top bar -->
 <div

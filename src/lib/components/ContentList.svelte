@@ -10,10 +10,10 @@
 </script>
 
 <div class="max-w-2xl font-mono text-xs">
-	<div class="mb-6 flex flex-wrap gap-2">
-		<a href={basePath} class="hover:text-black {!activeTag ? 'text-black' : 'text-gray-400'}">#all</a>
+	<div class="mb-8 flex flex-wrap gap-2 border-b border-gray-200 pb-4">
+		<a href={basePath} class="px-2 py-0.5 {!activeTag ? 'bg-gray-900 text-white' : 'text-gray-400 hover:text-black'}">#all</a>
 		{#each tags as tag (tag)}
-			<a href="{basePath}?tag={tag}" class="hover:text-black {activeTag === tag ? 'text-black' : 'text-gray-400'}">#{tag}</a>
+			<a href="{basePath}?tag={tag}" class="px-2 py-0.5 {activeTag === tag ? 'bg-gray-900 text-white' : 'text-gray-400 hover:text-black'}">#{tag}</a>
 		{/each}
 	</div>
 

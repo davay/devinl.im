@@ -9,7 +9,7 @@
 		src="/resume.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0"
 		title="Resume"
 		class="block"
-		style="aspect-ratio: 8.5/11; width: min(100%, calc((100vh - 6rem) * 8.5 / 11), 52rem)"
+		style="aspect-ratio: 8.5/11; width: min(100%, calc((100vh - 8.5rem) * 8.5 / 11), 52rem)"
 	></iframe>
-	<a href="/resume.pdf" download class="mt-2 block font-mono text-xs text-gray-400 hover:text-black">↓ download pdf</a>
+	<a href="/resume.pdf" download class="mt-2 inline-block font-mono text-xs text-gray-400 hover:text-black">↓ download pdf</a>
 </div>
