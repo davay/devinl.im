@@ -1,5 +1,33 @@
 @import 'tailwindcss';
 
+@theme {
+	--color-gray-450: #848b98;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	inset: -50%;
+	pointer-events: none;
+	z-index: 1;
+	background-image: radial-gradient(circle, rgba(60, 40, 20, 0.05) 1px, transparent 1px);
+	background-size: 3px 3px;
+	mix-blend-mode: multiply;
+	transform: rotate(75deg);
+}
+
+body::after {
+	content: '';
+	position: fixed;
+	inset: -50%;
+	pointer-events: none;
+	z-index: 1;
+	background-image: radial-gradient(circle, rgba(60, 40, 20, 0.05) 1px, transparent 1px);
+	background-size: 3px 3px;
+	mix-blend-mode: multiply;
+	transform: rotate(45deg);
+}
+
 :root {
 	--bg-sidebar: #f7f5f3;
 	--bg-content: #fdfcfa;

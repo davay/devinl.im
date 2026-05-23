@@ -11,12 +11,12 @@
 <svelte:head><title>{meta.title} — devinl.im</title></svelte:head>
 
 <article class="max-w-2xl">
-	<a href={basePath} class="mb-6 block font-mono text-xs text-gray-400 hover:text-black">← {basePath}</a>
+	<a href={basePath} class="mb-6 block font-mono text-xs text-gray-450 hover:text-black">← {basePath}</a>
 	<div class="mb-2 flex items-baseline justify-between gap-8">
 		<h1 class="font-mono text-lg text-black">{meta.title}</h1>
-		<span class="shrink-0 font-mono text-xs text-gray-400">{dateStr}</span>
+		<span class="shrink-0 font-mono text-xs text-gray-450">{dateStr}</span>
 	</div>
-	<div class="mb-8 font-mono text-xs text-gray-400">
+	<div class="mb-8 font-mono text-xs text-gray-450">
 		{#each meta.tags ?? [] as tag}
 			<a href="{basePath}?tag={tag}" class="mr-3 hover:text-black">#{tag}</a>
 		{/each}

@@ -21,19 +21,19 @@
       <img
         src="/me.jpg"
         alt="Devin Lim"
-        class="mx-auto mb-2.5 h-32 w-32 rounded-full object-cover grayscale"
+        class="mx-auto mb-2.5 h-36 w-36 rounded-full object-cover grayscale"
       />
-      <div class="font-mono text-xs text-black">Devin Lim</div>
-      <div class="font-mono text-xs text-gray-400">aspiring sudo-scientist</div>
+      <div class="font-mono text-sm text-black">Devin Lim</div>
+      <div class="font-mono text-xs text-gray-450">aspiring sudo-scientist</div>
     </div>
 
-    <p class="font-mono text-xs leading-relaxed text-gray-400">
-      Product-focused engineer with an interest in ML, BCI, and compilers. Most
+    <p class="font-mono text-xs leading-relaxed text-gray-450">
+      Product-focused engineer with an interest in ML, BCI, product design, and compilers. Most
       recently a founding engineer; before that on Microsoft's fraud protection
       team; recent MS in data science.
     </p>
 
-    <p class="font-mono text-xs leading-relaxed text-gray-400">
+    <p class="font-mono text-xs leading-relaxed text-gray-450">
       Currently building
       <a href="/projects/da-band" class="underline hover:text-black">da-band</a>
       — EMG wristband with muscle-sensing hardware, real-time classification, and
@@ -41,7 +41,7 @@
     </p>
 
     <p
-      class="border border-gray-200 p-1.5 font-mono text-xs leading-relaxed text-gray-400"
+      class="border border-gray-400 p-1.5 font-mono text-xs leading-relaxed text-gray-450"
     >
       Looking for my next role — ML engineering, ML compiler engineering, or
       general software engineering. If any of that resonates,
@@ -55,55 +55,55 @@
         href="/"
         class="block hover:text-black {pathname === '/'
           ? 'text-black'
-          : 'text-gray-400'}">/home</a
+          : 'text-gray-450'}">/home</a
       >
 
       <div>
-        <div class="mb-1 text-gray-400">writings</div>
+        <div class="mb-1 text-gray-450">writings</div>
         <div class="ml-2.5 space-y-1">
           <a
             href="/blog"
             class="block hover:text-black {pathname.startsWith('/blog')
               ? 'text-black'
-              : 'text-gray-400'}">/blog</a
+              : 'text-gray-450'}">/blog</a
           >
           <a
             href="/projects"
             class="block hover:text-black {pathname.startsWith('/projects')
               ? 'text-black'
-              : 'text-gray-400'}">/projects</a
+              : 'text-gray-450'}">/projects</a
           >
         </div>
       </div>
 
       <div>
-        <div class="mb-1 text-gray-400">links</div>
+        <div class="mb-1 text-gray-450">links</div>
         <div class="ml-2.5 space-y-1">
           <a
             href="https://linkedin.com/in/devinlim"
-            class="block text-gray-400 hover:text-black">/linkedin</a
+            class="block text-gray-450 hover:text-black">/linkedin</a
           >
           <a
             href="https://github.com/davay"
-            class="block text-gray-400 hover:text-black">/github</a
+            class="block text-gray-450 hover:text-black">/github</a
           >
         </div>
       </div>
 
       <div>
-        <div class="mb-1 text-gray-400">site</div>
+        <div class="mb-1 text-gray-450">site</div>
         <div class="ml-2.5 space-y-1">
           <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener"
-            class="block text-gray-400 hover:text-black">/resume</a
+            class="block text-gray-450 hover:text-black">/resume</a
           >
           <a
             href="https://github.com/davay/devinl.im"
-            class="block text-gray-400 hover:text-black">/source</a
+            class="block text-gray-450 hover:text-black">/source</a
           >
-          <a href="/rss.xml" class="block text-gray-400 hover:text-black"
+          <a href="/rss.xml" class="block text-gray-450 hover:text-black"
             >/rss</a
           >
         </div>
