@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+:root {
+	--bg-sidebar: #f7f5f3;
+	--bg-content: #fdfcfa;
+}
+
+.prose-post h1 {
+	font-size: 1rem;
+	margin: 1.5em 0 0.5em;
+	color: #000;
+}
+.prose-post h2 {
+	font-size: 0.9rem;
+	margin: 1.25em 0 0.5em;
+	color: #000;
+}
+.prose-post p {
+	margin: 0.75em 0;
+}
+.prose-post a {
+	text-decoration: underline;
+}
+.prose-post img {
+	max-width: 100%;
+	height: auto;
+	margin: 1em 0;
+	border: 1px solid #e5e5e5;
+}
+.prose-post ul {
+	list-style: disc;
+	padding-left: 1.25rem;
+	margin: 0.75em 0;
+}
+.prose-post ol {
+	list-style: decimal;
+	padding-left: 1.25rem;
+	margin: 0.75em 0;
+}
+.prose-post blockquote {
+	border-left: 2px solid #d4d0cc;
+	padding-left: 1rem;
+	color: #555;
+	margin: 1em 0;
+}
+.prose-post pre.shiki {
+	padding: 0.85rem 1rem;
+	overflow-x: auto;
+	margin: 1.25em 0;
+	border: 1px solid #e5e5e5;
+	font-size: 0.95em;
+	line-height: 1.5;
+}
+.prose-post :not(pre) > code {
+	background: #f3f1ef;
+	padding: 0.1em 0.3em;
+	border-radius: 2px;
+	font-size: 0.95em;
+}
