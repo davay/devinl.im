@@ -1,17 +1,10 @@
 <script>
+	import { fmtDate } from '$lib/fmtDate.js';
 	let { content, meta, basePath } = $props();
 	const Content = $derived(content);
 
-	const fmt = (d) =>
-		new Date(d).toLocaleDateString('en-US', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric',
-			timeZone: 'UTC'
-		});
-
-	const posted = $derived(fmt(meta.date));
-	const updated = $derived(meta.updated ? fmt(meta.updated) : null);
+	const posted = $derived(fmtDate(meta.date));
+	const updated = $derived(meta.updated ? fmtDate(meta.updated) : null);
 	const dateStr = $derived(updated ? `${posted} (edited ${updated})` : posted);
 </script>
 

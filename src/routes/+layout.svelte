@@ -34,7 +34,7 @@
 	>
 		<Sidebar />
 	</div>
-	<main class="flex-1 p-6 md:p-8" style="background-color: var(--bg-content)">
+	<main class="flex-1 p-6 md:px-8 md:pb-8 md:pt-9" style="background-color: var(--bg-content)">
 		{@render children()}
 	</main>
 </div>

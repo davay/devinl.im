@@ -1,12 +1,6 @@
 <script>
+	import { fmtDate } from '$lib/fmtDate.js';
 	let { items, tags, activeTag, basePath } = $props();
-	const fmt = (d) =>
-		new Date(d).toLocaleDateString('en-US', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric',
-			timeZone: 'UTC'
-		});
 </script>
 
 <div class="max-w-2xl font-mono text-xs">
@@ -21,7 +15,7 @@
 		<a href="{basePath}/{item.slug}" class="group mb-4 block">
 			<div class="flex items-baseline justify-between gap-8">
 				<span class="text-black">{item.title ?? item.slug}</span>
-				<span class="shrink-0 text-gray-400">{fmt(item.date)}</span>
+				<span class="shrink-0 text-gray-400">{fmtDate(item.date)}</span>
 			</div>
 			{#if item.description}
 				<div class="mt-1 text-gray-400">{item.description}</div>
