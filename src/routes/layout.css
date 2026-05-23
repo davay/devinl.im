@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-	--color-gray-450: #848b98;
+	--color-gray-450: #8c93a0;
 }
 
 body::before {
@@ -34,12 +34,12 @@ body::after {
 }
 
 .prose-post h1 {
-	font-size: 1rem;
+	font-size: 1.125rem;
 	margin: 1.5em 0 0.5em;
 	color: #000;
 }
 .prose-post h2 {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	margin: 1.25em 0 0.5em;
 	color: #000;
 }

@@ -15,7 +15,7 @@
 	{#each items as item (item.slug)}
 		<a href="{basePath}/{item.slug}" class="group mb-4 block">
 			<div class="flex items-baseline justify-between gap-8">
-				<span class="text-black">{item.title ?? item.slug}</span>
+				<span class="text-sm text-black">{item.title ?? item.slug}</span>
 				<span class="shrink-0 text-gray-450">{fmtDate(item.date)}</span>
 			</div>
 			{#if item.description}

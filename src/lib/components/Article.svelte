@@ -21,5 +21,5 @@
 			<a href="{basePath}?tag={tag}" class="mr-3 hover:text-black">#{tag}</a>
 		{/each}
 	</div>
-	<div class="prose-post font-mono text-xs leading-relaxed text-black"><Content /></div>
+	<div class="prose-post font-mono text-sm leading-relaxed text-black"><Content /></div>
 </article>

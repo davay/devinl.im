@@ -17,10 +17,10 @@
 	class="sticky top-0 z-20 flex items-center justify-between border-b border-gray-200 p-4 md:hidden"
 	style="background-color: var(--bg-sidebar)"
 >
-	<a href="/" class="font-mono text-xs text-gray-400 hover:text-black">devinl.im</a>
+	<a href="/" class="font-mono text-sm text-gray-450 hover:text-black">devinl.im</a>
 	<button
 		onclick={() => (open = !open)}
-		class="font-mono text-sm text-gray-400 hover:text-black"
+		class="font-mono text-sm text-gray-450 hover:text-black"
 		aria-label="Toggle menu"
 	>
 		{open ? '✕' : '☰'}

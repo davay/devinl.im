@@ -9,7 +9,7 @@
 >
   <a
     href="/"
-    class="hidden bg-gray-900 px-2 py-0.5 font-mono text-xs text-white md:block"
+    class="hidden bg-gray-900 px-2 py-0.5 font-mono text-sm text-white md:block"
     >devinl.im</a
   >
 
@@ -23,12 +23,12 @@
         alt="Devin Lim"
         class="mx-auto mb-2.5 h-36 w-36 rounded-full object-cover grayscale"
       />
-      <div class="font-mono text-sm text-black">Devin Lim</div>
-      <div class="font-mono text-xs text-gray-450">aspiring sudo-scientist</div>
+      <div class="mb-1.5 font-mono text-sm"><span class="bg-[#EEC2C0] px-1.5 py-0.5 text-black">Devin Lim</span></div>
+      <div class="font-mono text-xs italic text-[#D6AEAD]">aspiring sudo-scientist</div>
     </div>
 
     <p class="font-mono text-xs leading-relaxed text-gray-450">
-      Product-focused engineer with an interest in ML, BCI, product design, and compilers. Most
+      Engineer with an interest in ML, BCI, product design, and compilers. Most
       recently a founding engineer; before that on Microsoft's fraud protection
       team; recent MS in data science.
     </p>
@@ -41,7 +41,7 @@
     </p>
 
     <p
-      class="border border-gray-400 p-1.5 font-mono text-xs leading-relaxed text-gray-450"
+      class="border border-gray-450 p-1.5 font-mono text-xs leading-relaxed text-gray-450"
     >
       Looking for my next role — ML engineering, ML compiler engineering, or
       general software engineering. If any of that resonates,
