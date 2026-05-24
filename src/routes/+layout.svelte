@@ -33,7 +33,7 @@
 			<div class="relative shrink-0">
 				<button
 					onclick={() => toggle('writings')}
-					class="hover:text-black {activeDropdown === 'writings' ? 'text-black underline underline-offset-2' : 'text-gray-450 underline decoration-dotted underline-offset-2'}"
+					class="hover:text-black active:text-black {activeDropdown === 'writings' ? 'text-black underline underline-offset-2' : 'text-gray-450 underline decoration-dotted underline-offset-2'}"
 				>{activeDropdown === 'writings' ? '[writings]' : 'writings'}</button>
 				{#if activeDropdown === 'writings'}
 					<div class="absolute left-0 top-full z-20 flex flex-col divide-y divide-gray-250 border border-gray-250" style="background-color: var(--bg-sidebar)">
@@ -46,7 +46,7 @@
 			<div class="relative shrink-0">
 				<button
 					onclick={() => toggle('links')}
-					class="hover:text-black {activeDropdown === 'links' ? 'text-black underline underline-offset-2' : 'text-gray-450 underline decoration-dotted underline-offset-2'}"
+					class="hover:text-black active:text-black {activeDropdown === 'links' ? 'text-black underline underline-offset-2' : 'text-gray-450 underline decoration-dotted underline-offset-2'}"
 				>{activeDropdown === 'links' ? '[links]' : 'links'}</button>
 				{#if activeDropdown === 'links'}
 					<div class="absolute left-0 top-full z-20 flex flex-col divide-y divide-gray-250 border border-gray-250" style="background-color: var(--bg-sidebar)">
@@ -60,7 +60,7 @@
 			<div class="relative shrink-0">
 				<button
 					onclick={() => toggle('site')}
-					class="hover:text-black {activeDropdown === 'site' ? 'text-black underline underline-offset-2' : 'text-gray-450 underline decoration-dotted underline-offset-2'}"
+					class="hover:text-black active:text-black {activeDropdown === 'site' ? 'text-black underline underline-offset-2' : 'text-gray-450 underline decoration-dotted underline-offset-2'}"
 				>{activeDropdown === 'site' ? '[site]' : 'site'}</button>
 				{#if activeDropdown === 'site'}
 					<div class="absolute left-0 top-full z-20 flex flex-col divide-y divide-gray-250 border border-gray-250" style="background-color: var(--bg-sidebar)">
@@ -73,7 +73,7 @@
 		</nav>
 		<button
 			onclick={() => (open = !open)}
-			class="shrink-0 font-mono text-sm text-gray-450 hover:text-black"
+			class="shrink-0 font-mono text-sm text-gray-450 hover:text-black active:text-black"
 			aria-label="Toggle bio"
 		>{open ? '✕' : '☰'}</button>
 	</div>
