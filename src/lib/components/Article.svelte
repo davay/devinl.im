@@ -1,0 +1,25 @@
+<script>
+	import { fmtDate } from '$lib/fmtDate.js';
+	let { content, meta, basePath } = $props();
+	const Content = $derived(content);
+
+	const posted = $derived(fmtDate(meta.date));
+	const updated = $derived(meta.updated ? fmtDate(meta.updated) : null);
+	const dateStr = $derived(updated ? `${posted} (edited ${updated})` : posted);
+</script>
+
+<svelte:head><title>{meta.title} — devinl.im</title></svelte:head>
+
+<article class="max-w-2xl">
+	<a href={basePath} class="mb-5 mt-1 block font-mono text-xs text-gray-450 hover:text-black active:text-black">← {basePath}</a>
+	<div class="mb-2 flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between md:gap-8">
+		<h1 class="font-mono text-lg text-black">{meta.title}</h1>
+		<span class="shrink-0 font-mono text-xs text-gray-450">{dateStr}</span>
+	</div>
+	<div class="mb-8 font-mono text-xs text-gray-450">
+		{#each (meta.tags ?? []).toSorted() as tag}
+			<a href="{basePath}?tag={tag}" class="mr-3 hover:text-black active:text-black">#{tag}</a>
+		{/each}
+	</div>
+	<div class="prose-post font-mono text-sm leading-relaxed text-black"><Content /></div>
+</article>
