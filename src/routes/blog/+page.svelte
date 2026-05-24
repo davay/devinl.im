@@ -8,5 +8,5 @@
 	<div class="mb-4 flex flex-wrap items-baseline gap-x-4">
 		<h1 class="font-mono text-lg text-black">Blog</h1>
 	</div>
-	<ContentList items={data.items} tags={data.tags} activeTag={data.activeTag} basePath="/blog" />
+	<ContentList items={data.items} tags={data.tags} basePath="/blog" />
 </div>

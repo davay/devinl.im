@@ -14,12 +14,10 @@ export function getTags(items) {
 	return [...new Set(items.flatMap((p) => p.tags ?? []))].sort();
 }
 
-export function loadIndex(getAll, getTags, url) {
+export function loadIndex(getAll, getTags) {
 	const items = getAll();
-	const tag = url.searchParams.get('tag');
 	return {
-		items: tag ? items.filter((p) => p.tags?.includes(tag)) : items,
-		tags: getTags(items),
-		activeTag: tag
+		items,
+		tags: getTags(items)
 	};
 }
