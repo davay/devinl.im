@@ -28,14 +28,15 @@
     </div>
 
     <p class="font-mono text-xs leading-relaxed text-gray-450">
-      Engineer with an interest in ML, BCI, product design, and compilers. Most
-      recently a founding engineer; before that on Microsoft's fraud protection
-      team; recent MS in data science.
+      Engineer with an interest in ML, computational neuroscience, spatial
+      computing, product design, compilers, and open source. Most recently a
+      founding engineer; before that on Microsoft's fraud protection team;
+      recent MS in data science.
     </p>
 
     <p class="font-mono text-xs leading-relaxed text-gray-450">
       Currently building
-      <a href="/projects/da-band" class="underline hover:text-black">da-band</a>
+      <a href="/projects/da-band" class="underline hover:text-black active:text-black">da-band</a>
       — EMG wristband with muscle-sensing hardware, real-time classification, and
       an iOS app. Off the terminal: tea, cats, reading, raving, traveling, 3D printing.
     </p>
@@ -45,7 +46,7 @@
     >
       Looking for my next role — ML engineering, ML compiler engineering, or
       general software engineering. If any of that resonates,
-      <a href="mailto:davay@devinl.im" class="underline hover:text-black"
+      <a href="mailto:davay@devinl.im" class="underline hover:text-black active:text-black"
         >say hi</a
       >.
     </p>
@@ -53,7 +54,7 @@
     <nav class="hidden flex-col gap-2.5 font-mono text-xs md:flex">
       <a
         href="/"
-        class="block hover:text-black {pathname === '/'
+        class="block hover:text-black active:text-black {pathname === '/'
           ? 'text-black'
           : 'text-gray-450'}">/home</a
       >
@@ -63,13 +64,13 @@
         <div class="ml-2.5 space-y-1">
           <a
             href="/blog"
-            class="block hover:text-black {pathname.startsWith('/blog')
+            class="block hover:text-black active:text-black {pathname.startsWith('/blog')
               ? 'text-black'
               : 'text-gray-450'}">/blog</a
           >
           <a
             href="/projects"
-            class="block hover:text-black {pathname.startsWith('/projects')
+            class="block hover:text-black active:text-black {pathname.startsWith('/projects')
               ? 'text-black'
               : 'text-gray-450'}">/projects</a
           >
@@ -83,13 +84,19 @@
             href="https://linkedin.com/in/devinlim"
             target="_blank"
             rel="noopener"
-            class="block text-gray-450 hover:text-black">/linkedin</a
+            class="block text-gray-450 hover:text-black active:text-black">/linkedin</a
           >
           <a
             href="https://github.com/davay"
             target="_blank"
             rel="noopener"
-            class="block text-gray-450 hover:text-black">/github</a
+            class="block text-gray-450 hover:text-black active:text-black">/github</a
+          >
+          <a
+            href="https://patents.google.com/patent/US10733303B1"
+            target="_blank"
+            rel="noopener"
+            class="block text-gray-450 hover:text-black active:text-black">/patent</a
           >
         </div>
       </div>
@@ -101,15 +108,15 @@
             href="/resume.pdf"
             target="_blank"
             rel="noopener"
-            class="block text-gray-450 hover:text-black">/resume</a
+            class="block text-gray-450 hover:text-black active:text-black">/resume</a
           >
           <a
             href="https://github.com/davay/devinl.im"
             target="_blank"
             rel="noopener"
-            class="block text-gray-450 hover:text-black">/source</a
+            class="block text-gray-450 hover:text-black active:text-black">/source</a
           >
-          <a href="/rss.xml" class="block text-gray-450 hover:text-black"
+          <a href="/rss.xml" class="block text-gray-450 hover:text-black active:text-black"
             >/rss</a
           >
         </div>

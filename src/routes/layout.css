@@ -15,12 +15,12 @@
 	mix-blend-mode: multiply;
 }
 
-a {
+a, button {
 	transition: color 150ms;
 }
 
 :root {
-	--bg-sidebar: #f7f5f3;
+	--bg-sidebar: #f6f3f0;
 	--bg-content: #fdfcfa;
 }
 

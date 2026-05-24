@@ -5,14 +5,14 @@
 	import { page } from '$app/state';
 
 	let { children } = $props();
-	let open = $state(false);
+	let open = $state(page.url.pathname === '/');
 	let activeDropdown = $state(null);
 	let pathname = $derived(page.url.pathname);
 
-	afterNavigate(() => {
+	afterNavigate((nav) => {
 		window.scrollTo(0, 0);
-		open = false;
 		activeDropdown = null;
+		if (nav.from?.url.pathname !== nav.to?.url.pathname) open = false;
 	});
 
 	function toggle(name) {
@@ -25,7 +25,7 @@
 <!-- Mobile top bar -->
 <div
 	class="sticky top-0 z-10 md:hidden"
-	style="background-color: var(--bg-sidebar)"
+	style="background-color: var(--bg-sidebar); background-image: linear-gradient(rgba(60, 40, 20, 0.05), rgba(60, 40, 20, 0.05))"
 >
 	<div class="flex items-center gap-3 border-b border-gray-250 px-4 py-2">
 		<a href="/" class="shrink-0 bg-gray-900 px-2 py-0.5 font-mono text-sm text-white">devinl.im</a>
@@ -37,8 +37,8 @@
 				>{activeDropdown === 'writings' ? '[writings]' : 'writings'}</button>
 				{#if activeDropdown === 'writings'}
 					<div class="absolute left-0 top-full z-20 flex flex-col divide-y divide-gray-250 border border-gray-250" style="background-color: var(--bg-sidebar)">
-						<a href="/blog" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#eeecea] hover:text-black active:bg-[#eeecea] active:text-black">/blog</a>
-						<a href="/projects" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#eeecea] hover:text-black active:bg-[#eeecea] active:text-black">/projects</a>
+						<a href="/blog" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#ede9e5] hover:text-black active:bg-[#ede9e5] active:text-black">/blog</a>
+						<a href="/projects" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#ede9e5] hover:text-black active:bg-[#ede9e5] active:text-black">/projects</a>
 					</div>
 				{/if}
 			</div>
@@ -50,8 +50,9 @@
 				>{activeDropdown === 'links' ? '[links]' : 'links'}</button>
 				{#if activeDropdown === 'links'}
 					<div class="absolute left-0 top-full z-20 flex flex-col divide-y divide-gray-250 border border-gray-250" style="background-color: var(--bg-sidebar)">
-						<a href="https://linkedin.com/in/devinlim" target="_blank" rel="noopener" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#eeecea] hover:text-black active:bg-[#eeecea] active:text-black">/linkedin</a>
-						<a href="https://github.com/davay" target="_blank" rel="noopener" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#eeecea] hover:text-black active:bg-[#eeecea] active:text-black">/github</a>
+						<a href="https://linkedin.com/in/devinlim" target="_blank" rel="noopener" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#ede9e5] hover:text-black active:bg-[#ede9e5] active:text-black">/linkedin</a>
+						<a href="https://github.com/davay" target="_blank" rel="noopener" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#ede9e5] hover:text-black active:bg-[#ede9e5] active:text-black">/github</a>
+					<a href="https://patents.google.com/patent/US10733303B1" target="_blank" rel="noopener" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#ede9e5] hover:text-black active:bg-[#ede9e5] active:text-black">/patent</a>
 					</div>
 				{/if}
 			</div>
@@ -63,9 +64,9 @@
 				>{activeDropdown === 'site' ? '[site]' : 'site'}</button>
 				{#if activeDropdown === 'site'}
 					<div class="absolute left-0 top-full z-20 flex flex-col divide-y divide-gray-250 border border-gray-250" style="background-color: var(--bg-sidebar)">
-						<a href="/resume.pdf" target="_blank" rel="noopener" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#eeecea] hover:text-black active:bg-[#eeecea] active:text-black">/resume</a>
-						<a href="https://github.com/davay/devinl.im" target="_blank" rel="noopener" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#eeecea] hover:text-black active:bg-[#eeecea] active:text-black">/source</a>
-						<a href="/rss.xml" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#eeecea] hover:text-black active:bg-[#eeecea] active:text-black">/rss</a>
+						<a href="/resume.pdf" target="_blank" rel="noopener" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#ede9e5] hover:text-black active:bg-[#ede9e5] active:text-black">/resume</a>
+						<a href="https://github.com/davay/devinl.im" target="_blank" rel="noopener" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#ede9e5] hover:text-black active:bg-[#ede9e5] active:text-black">/source</a>
+						<a href="/rss.xml" class="block px-3 py-1 text-gray-450 transition-colors hover:bg-[#ede9e5] hover:text-black active:bg-[#ede9e5] active:text-black">/rss</a>
 					</div>
 				{/if}
 			</div>
@@ -83,7 +84,7 @@
 <div class="flex min-h-screen flex-col bg-white md:flex-row">
 	<div
 		class="{open ? 'block' : 'hidden'} border-b border-gray-250 md:block md:border-b-0 md:sticky md:top-0 md:h-screen md:self-start md:border-r"
-		style="background-color: var(--bg-sidebar)"
+		style="background-color: var(--bg-sidebar); background-image: linear-gradient(rgba(60, 40, 20, 0.05), rgba(60, 40, 20, 0.05))"
 	>
 		<Sidebar />
 	</div>
