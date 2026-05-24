@@ -50,7 +50,7 @@
       >.
     </p>
 
-    <nav class="flex flex-col gap-2.5 font-mono text-xs">
+    <nav class="hidden flex-col gap-2.5 font-mono text-xs md:flex">
       <a
         href="/"
         class="block hover:text-black {pathname === '/'
